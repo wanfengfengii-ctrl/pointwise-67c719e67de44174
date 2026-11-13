@@ -1,0 +1,1682 @@
+[
+ {
+  "case": "normal",
+  "observed": {
+   "accepted_prefix": 3,
+   "actual": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "case": "normal",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[\"north\", \"same\", 10, \"ok\"], [\"north\", \"same\", 0, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "normal",
+  "observed": {
+   "accepted_prefix": 2,
+   "actual": {
+    "A": null
+   },
+   "case": "normal",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ]
+    ],
+    "pending": [
+     [
+      "r",
+      "7",
+      "[\"stations\", 0, \"readings\"]"
+     ]
+    ],
+    "published": [],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": 2
+ },
+ {
+  "case": "normal",
+  "observed": {
+   "accepted_prefix": 3,
+   "actual": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "case": "normal",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[\"north\", \"same\", 10, \"ok\"], [\"north\", \"same\", 0, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": true,
+  "stop": null
+ },
+ {
+  "case": "progress",
+  "observed": {
+   "accepted_prefix": 3,
+   "actual": {
+    "A": null
+   },
+   "case": "progress",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ]
+    ],
+    "pending": [
+     [
+      "r",
+      "7",
+      "[\"stations\", 0, \"readings\"]"
+     ],
+     [
+      "s",
+      "7",
+      "[\"stations\"]"
+     ]
+    ],
+    "published": [],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": 3
+ },
+ {
+  "case": "progress",
+  "observed": {
+   "accepted_prefix": 4,
+   "actual": {
+    "A": null
+   },
+   "case": "progress",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "A",
+      4
+     ]
+    ],
+    "pending": [
+     [
+      "s",
+      "7",
+      "[\"stations\"]"
+     ]
+    ],
+    "published": [],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": 4
+ },
+ {
+  "case": "progress",
+  "observed": {
+   "accepted_prefix": 5,
+   "actual": {
+    "A": null
+   },
+   "case": "progress",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "A",
+      4
+     ],
+     [
+      "A",
+      5
+     ]
+    ],
+    "pending": [
+     [
+      "s",
+      "7",
+      "[\"stations\"]"
+     ]
+    ],
+    "published": [],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}, {\"code\": \"south\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": 5
+ },
+ {
+  "case": "progress",
+  "observed": {
+   "accepted_prefix": 6,
+   "actual": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "case": "progress",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "A",
+      4
+     ],
+     [
+      "A",
+      5
+     ],
+     [
+      "A",
+      6
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[\"north\", \"same\", 10, \"ok\"], [\"north\", \"same\", 0, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}, {\"code\": \"south\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "progress",
+  "observed": {
+   "accepted_prefix": 4,
+   "actual": {
+    "A": null
+   },
+   "case": "progress",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "A",
+      4
+     ]
+    ],
+    "pending": [
+     [
+      "s",
+      "7",
+      "[\"stations\"]"
+     ]
+    ],
+    "published": [],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": true,
+  "stop": 4
+ },
+ {
+  "case": "delayed",
+  "observed": {
+   "accepted_prefix": 2,
+   "actual": {
+    "A": null
+   },
+   "case": "delayed",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ]
+    ],
+    "pending": [
+     [
+      "m",
+      "7",
+      "[\"stations\", 0]"
+     ],
+     [
+      "r",
+      "7",
+      "[\"stations\", 0, \"readings\"]"
+     ]
+    ],
+    "published": [],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      null,
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      null,
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": 2
+ },
+ {
+  "case": "delayed",
+  "observed": {
+   "accepted_prefix": 3,
+   "actual": {
+    "A": null
+   },
+   "case": "delayed",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ]
+    ],
+    "pending": [
+     [
+      "r",
+      "7",
+      "[\"stations\", 0, \"readings\"]"
+     ]
+    ],
+    "published": [],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"readings\": [], \"code\": \"north\"}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      null,
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      null,
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": 3
+ },
+ {
+  "case": "delayed",
+  "observed": {
+   "accepted_prefix": 4,
+   "actual": {
+    "A": [
+     [
+      null,
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      null,
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "case": "delayed",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "A",
+      4
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[null, \"same\", 10, \"ok\"], [null, \"same\", 0, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"readings\": [], \"code\": \"north\"}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      null,
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      null,
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "late_null",
+  "observed": {
+   "accepted_prefix": 2,
+   "actual": {
+    "A": null
+   },
+   "case": "late_null",
+   "complete_expected": {
+    "A": []
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ]
+    ],
+    "pending": [
+     [
+      "r",
+      "7",
+      "[\"stations\", 0, \"readings\"]"
+     ]
+    ],
+    "published": [],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": 2
+ },
+ {
+  "case": "late_null",
+  "observed": {
+   "accepted_prefix": 3,
+   "actual": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "case": "late_null",
+   "complete_expected": {
+    "A": []
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[\"north\", \"same\", 10, \"ok\"], [\"north\", \"same\", 0, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [null]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "gap",
+  "observed": {
+   "accepted_prefix": 2,
+   "actual": {
+    "A": []
+   },
+   "case": "gap",
+   "complete_expected": {
+    "A": null
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      3
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": []
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "reused",
+  "observed": {
+   "accepted_prefix": 5,
+   "actual": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ],
+    "B": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "case": "reused",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ],
+    "B": []
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "B",
+      1
+     ],
+     [
+      "B",
+      2
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[\"north\", \"same\", 10, \"ok\"], [\"north\", \"same\", 0, \"ok\"]]"
+     ],
+     [
+      "B",
+      "[[\"north\", \"same\", 10, \"ok\"], [\"north\", \"same\", 0, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "B",
+      "{\"stations\": [{\"code\": \"south\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "interleaved",
+  "observed": {
+   "accepted_prefix": 6,
+   "actual": {
+    "A": [],
+    "B": []
+   },
+   "case": "interleaved",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ],
+    "B": [
+     [
+      "east",
+      "same",
+      20,
+      "ok"
+     ],
+     [
+      "east",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [
+    [
+     3,
+     "IndexError",
+     "list index out of range"
+    ],
+    [
+     5,
+     "TypeError",
+     "'NoneType' object is not subscriptable"
+    ]
+   ],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "B",
+      1
+     ],
+     [
+      "B",
+      3
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[]"
+     ],
+     [
+      "B",
+      "[]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ],
+     [
+      "8",
+      "B",
+      "{\"stations\": [{\"code\": \"west\", \"readings\": []}, {\"code\": \"east\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": []
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "cancelled",
+  "observed": {
+   "accepted_prefix": 5,
+   "actual": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ],
+     [
+      null,
+      "late",
+      99,
+      "ok"
+     ]
+    ]
+   },
+   "case": "cancelled",
+   "complete_expected": {
+    "A": []
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "A",
+      4
+     ],
+     [
+      "A",
+      5
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[\"north\", \"same\", 10, \"ok\"], [\"north\", \"same\", 0, \"ok\"], [null, \"late\", 99, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [null]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      3,
+      null,
+      "late",
+      99,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "holes",
+  "observed": {
+   "accepted_prefix": 4,
+   "actual": {
+    "A": [
+     [
+      "north",
+      "a",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "b",
+      20,
+      "ok"
+     ],
+     [
+      "north",
+      "c",
+      30,
+      "ok"
+     ]
+    ]
+   },
+   "case": "holes",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "a",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "b",
+      20,
+      "ok"
+     ],
+     [
+      "north",
+      "c",
+      30,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "A",
+      4
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[\"north\", \"a\", 10, \"ok\"], [\"north\", \"b\", 20, \"ok\"], [\"north\", \"c\", 30, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "a",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "b",
+      20,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      2,
+      "north",
+      "c",
+      30,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": null
+ },
+ {
+  "case": "handoff",
+  "observed": {
+   "accepted_prefix": 4,
+   "actual": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "case": "handoff",
+   "complete_expected": {
+    "A": [
+     [
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   },
+   "errors": [],
+   "state": {
+    "inbox": [
+     [
+      "A",
+      1
+     ],
+     [
+      "A",
+      2
+     ],
+     [
+      "A",
+      3
+     ],
+     [
+      "A",
+      4
+     ]
+    ],
+    "pending": [],
+    "published": [
+     [
+      "A",
+      "[[\"north\", \"same\", 10, \"ok\"], [\"north\", \"same\", 0, \"ok\"]]"
+     ]
+    ],
+    "slots": [
+     [
+      "7",
+      "A",
+      "{\"stations\": [{\"code\": \"north\", \"readings\": []}]}"
+     ]
+    ],
+    "staged": [
+     [
+      "7",
+      0,
+      0,
+      "north",
+      "same",
+      10,
+      "ok"
+     ],
+     [
+      "7",
+      0,
+      1,
+      "north",
+      "same",
+      0,
+      "ok"
+     ]
+    ]
+   }
+  },
+  "reopen": false,
+  "stop": null
+ }
+]
